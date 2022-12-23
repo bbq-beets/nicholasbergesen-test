@@ -3,6 +3,7 @@ on:
   push:
     branches-ignore:
       - 'feature/[a-z]+-[0-9]+**'
+      - 'bugfix/[a-z]+-[0-9]+**'
 
 jobs:
   echo:
