@@ -2,7 +2,7 @@ name: Regex Text New
 on:
   push:
     branches-ignore:
-      - 'feature/[a-z]+-[0-9]+'
+      - 'feature/[a-z]+-[0-9]+**'
 
 jobs:
   echo:
