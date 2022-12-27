@@ -1,0 +1,11 @@
+name: Matrix-Json
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: {"include":[{"project":"foo","config":"Debug"},{"project":"bar","config":"Release"}]}
+    steps:
+      - name: Run a one-line script
+        run: echo ${{ strategy.matrix }}
